@@ -81,7 +81,7 @@ class Apixu implements ApixuInterface
     /**
      * {@inheritdoc}
      */
-    public function history(string $query, \DateTime $since) : History
+    public function history(string $query, \DateTime $since)
     {
         $this->validateQuery($query);
         $response = $this->api->call(
