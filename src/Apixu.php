@@ -118,6 +118,6 @@ class Apixu implements ApixuInterface
      */
     private function getResponse(StreamInterface $response, string $class)
     {
-        return $this->serializer->unserialize($response->getContents(), $class);
+        return json_decode($response->getContents());
     }
 }
