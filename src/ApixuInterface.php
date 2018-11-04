@@ -57,5 +57,5 @@ interface ApixuInterface
      * @return History
      * @throws ApixuException
      */
-    public function history(string $query, \DateTime $since) : History;
+    public function history(string $query, \DateTime $since);
 }
